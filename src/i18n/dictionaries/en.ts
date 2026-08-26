@@ -232,7 +232,6 @@ const en = {
     authorRole: "Product designer & full-stack engineer",
     authorBio:
       "I build healthcare experiences that feel human: accessible interfaces, fast pages, and quiet, careful motion. Aurélia is my studio project — every pixel, component and query is mine.",
-    stackTitle: "Stack in production",
     capabilitiesTitle: "What I bring to a clinic project",
     capabilities: [
       {
@@ -259,13 +258,6 @@ const en = {
         title: "Booking & data",
         desc: "Scheduling, forms, encrypted records, payments and analytics wired to real workflows.",
       },
-    ],
-    groups: [
-      { title: "Interface", slugs: ["nextdotjs", "react", "typescript", "tailwindcss", "sass", "html5", "css", "javascript"] },
-      { title: "Motion & 3D", slugs: ["framer", "greensock", "threedotjs", "webgl"] },
-      { title: "Data & backend", slugs: ["nodedotjs", "postgresql", "prisma", "graphql", "supabase", "mongodb"] },
-      { title: "Platform & tooling", slugs: ["vercel", "docker", "github", "vite", "figma", "storybook", "jest"] },
-      { title: "Growth & content", slugs: ["stripe", "sanity", "contentful", "i18next", "googleanalytics", "shopify"] },
     ],
     metrics: [
       { value: "100", label: "Lighthouse SEO" },

@@ -46,7 +46,7 @@ export function Chip({
 }) {
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border border-white bg-white/70 px-4 py-2 text-[0.9rem] font-bold text-ink shadow-soft backdrop-blur-md ${className}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-white bg-white/85 px-4 py-2 text-[0.9rem] font-bold text-ink shadow-soft ${className}`}
     >
       {icon && <Glyph name={icon} className="h-4 w-4 text-coral-500" strokeWidth={3} />}
       {children}

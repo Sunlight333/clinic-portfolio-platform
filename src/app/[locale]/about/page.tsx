@@ -8,13 +8,12 @@ import { IconOrb, type Tone } from "@/components/ui/IconOrb";
 import { Glyph, type GlyphName } from "@/components/icons/Glyph";
 import { Eyebrow, SectionHeading, Chip } from "@/components/ui/Bits";
 import { Reveal } from "@/components/ui/Reveal";
-import { Counter, Marquee } from "@/components/ui/Motion";
+import { Counter } from "@/components/ui/Motion";
 import { Button } from "@/components/ui/Button";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { Team } from "@/components/sections/Team";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBand } from "@/components/sections/CtaBand";
-import { TechIcon, techTitle } from "@/components/icons/TechIcon";
 
 export async function generateMetadata({
   params,
@@ -45,7 +44,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
   const t = dict.pages.about;
-  const stackSlugs = dict.tech.groups.flatMap((g) => g.slugs);
 
   return (
     <>
@@ -255,7 +253,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       {/* ======================================================= built here */}
       <section className="section relative overflow-hidden bg-[linear-gradient(180deg,#f7f2ff,#fff6f0)]">
         <div className="container-x relative">
-          <div className="ring-grad shape-ticket relative overflow-hidden bg-white/85 p-8 shadow-float backdrop-blur-xl sm:p-12">
+          <div className="ring-grad shape-ticket relative overflow-hidden bg-white/92 p-8 shadow-float sm:p-12">
             <span aria-hidden className="ring-grad-line shape-ticket" />
             <div className="relative grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
               <div>
@@ -278,37 +276,21 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </Button>
               </div>
 
-              <div className="grid grid-cols-4 gap-3.5 sm:grid-cols-5">
-                {stackSlugs.slice(0, 20).map((slug) => (
-                  <span
-                    key={slug}
-                    title={techTitle(slug)}
-                    className="grid aspect-square place-items-center rounded-full border border-white bg-white shadow-soft transition-transform duration-400 hover:-translate-y-1.5"
-                  >
-                    <TechIcon slug={slug} size={26} />
-                  </span>
-                ))}
+              <div className="relative">
+                <MediaFrame
+                  src="diagnostics-imaging"
+                  alt={t.buildTitle}
+                  shape="leaf"
+                  className="aspect-[4/3] w-full border-[5px] border-white"
+                  sizes="(max-width:1024px) 90vw, 520px"
+                  wash="lilac"
+                />
+                <span className="absolute -bottom-7 -left-6 hidden sm:block">
+                  <IconOrb icon="scan" tone="lilac" size="xl" halo />
+                </span>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-12">
-          <Marquee speed={62} gap="1.4rem">
-            {stackSlugs.map((slug, i) => (
-              <span
-                key={`${slug}-${i}`}
-                className="flex shrink-0 items-center gap-3 rounded-full border border-white bg-white/75 py-2.5 pr-6 pl-2.5 shadow-soft"
-              >
-                <span className="grid h-11 w-11 place-items-center rounded-full bg-white shadow-soft">
-                  <TechIcon slug={slug} size={22} />
-                </span>
-                <span className="font-display text-[0.96rem] font-extrabold whitespace-nowrap">
-                  {techTitle(slug)}
-                </span>
-              </span>
-            ))}
-          </Marquee>
         </div>
       </section>
 

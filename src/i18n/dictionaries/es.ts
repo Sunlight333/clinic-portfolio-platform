@@ -234,7 +234,6 @@ const es: Dictionary = {
     authorRole: "Product designer e ingeniera full-stack",
     authorBio:
       "Construyo experiencias de salud que se sienten humanas: interfaces accesibles, páginas rápidas y movimiento discreto y cuidado. Aurélia es mi proyecto de estudio — cada píxel, componente y consulta es mío.",
-    stackTitle: "Stack en producción",
     capabilitiesTitle: "Lo que aporto a un proyecto clínico",
     capabilities: [
       {
@@ -261,13 +260,6 @@ const es: Dictionary = {
         title: "Reservas y datos",
         desc: "Agenda, formularios, historias cifradas, pagos y analítica conectados a flujos reales.",
       },
-    ],
-    groups: [
-      { title: "Interfaz", slugs: ["nextdotjs", "react", "typescript", "tailwindcss", "sass", "html5", "css", "javascript"] },
-      { title: "Movimiento y 3D", slugs: ["framer", "greensock", "threedotjs", "webgl"] },
-      { title: "Datos y backend", slugs: ["nodedotjs", "postgresql", "prisma", "graphql", "supabase", "mongodb"] },
-      { title: "Plataforma y herramientas", slugs: ["vercel", "docker", "github", "vite", "figma", "storybook", "jest"] },
-      { title: "Crecimiento y contenido", slugs: ["stripe", "sanity", "contentful", "i18next", "googleanalytics", "shopify"] },
     ],
     metrics: [
       { value: "100", label: "SEO en Lighthouse" },
