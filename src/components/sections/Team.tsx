@@ -10,9 +10,9 @@ import type { ImageKey } from "@/lib/images";
 
 const MEMBER_META: { image: ImageKey; icon: GlyphName; tone: Tone; shape: "arch" | "arch-soft" }[] = [
   { image: "team-clinician-f", icon: "implant", tone: "sky", shape: "arch" },
-  { image: "team-doctor-m", icon: "sparkle", tone: "rose", shape: "arch-soft" },
-  { image: "person-1", icon: "stethoscope", tone: "mint", shape: "arch" },
-  { image: "team-doctor-4", icon: "aligner", tone: "lilac", shape: "arch-soft" },
+  { image: "team-doctor-5", icon: "sparkle", tone: "rose", shape: "arch-soft" },
+  { image: "team-doctor-6", icon: "stethoscope", tone: "mint", shape: "arch" },
+  { image: "team-doctor-3", icon: "aligner", tone: "lilac", shape: "arch-soft" },
 ];
 
 export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -58,7 +58,7 @@ export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                       shape={m.shape}
                       className="aspect-[3/4] w-full border-[5px] border-white transition-transform duration-700 ease-[cubic-bezier(.16,1,.3,1)] group-hover:-translate-y-2"
                       sizes="(max-width:640px) 100vw, 320px"
-                      imgClassName="transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.06]"
+                      imgClassName="saturate-[.88] transition-transform duration-[1200ms] ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.06]"
                     />
                     <span className="absolute -right-3 bottom-6 transition-transform duration-500 group-hover:-translate-y-2">
                       <IconOrb icon={m.icon} tone={m.tone} size="lg" halo />

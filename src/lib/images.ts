@@ -145,18 +145,6 @@ export const IMG = {
     "h": 801,
     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAA0APwForE6rJaQiMAgBYCAJYwCdABk+T8ANvn93bzPQAP7p1Is26yWLBDKOP75ESPms3maaP+JY16KmtXAifxgCl/dVBKHtoPnUjf/ogmFAAAA="
   },
-  "person-1": {
-    "src": "/images/person-1.jpg",
-    "w": 500,
-    "h": 500,
-    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwBACdASoUABQAPwFqsFErJaSyMBgIAkAgCWUAxNgQO7eoOC3Jbst4SFrdAAD+5zm96y2yMLGDBMEWjEWFjw8JtytZ1IRUrLI/j5Nv0WHqQxQIAcxjUKQAAAA="
-  },
-  "person-2": {
-    "src": "/images/person-2.jpg",
-    "w": 500,
-    "h": 500,
-    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwBQCdASoUABQAPu1gp06ppaOiN/qoATAdiWMAwoAh4AuJsc3XQl6y5pqxlDgWdQErAAD+6LnLb5Yhz1MOPamxDH6s6oiFvK1Ye5Q8qDOZe66KHCJWD56+GeyCYAAA"
-  },
   "person-3": {
     "src": "/images/person-3.jpg",
     "w": 500,
@@ -193,29 +181,23 @@ export const IMG = {
     "h": 1350,
     "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACwBACdASoUAB4APwFqrE6rJiQiMAgBYCAJaADDNBjx/DQ6mIJEMGmK/a51GheAAP7qlucdPijHvECjlFNRZo6OjaRjsEspDeBOh+qyVgO3h3uywRr0tCh1tdqFjI2gmOUIy8TKA3KvrTZbK0w58Y80Wy/o6jh/CVTy0+/IhwAAAA=="
   },
-  "team-doctor-2": {
-    "src": "/images/team-doctor-2.jpg",
-    "w": 900,
-    "h": 600,
-    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAA0APwFurk+rJqQiMAgBYCAJagDA3BjLnlEyz7KM9AAAzhN62Y8jcL+seccn8VVEz7useyOIvgSjLi0EHu6eU/9yeraToAA="
-  },
   "team-doctor-3": {
     "src": "/images/team-doctor-3.jpg",
-    "w": 900,
-    "h": 1350,
-    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoUAB4APwFqrE6rJiQiMAgBYCAJZQAAW+zQuNskULj89cJIgAD+w34igi5nVktovxSWJrDPEExo0CV2rBJntIabCesbOzvL6mlY/sQgAAA="
+    "w": 800,
+    "h": 1050,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwBACdASoUABoAPwFqrE8rJiQiMAgBYCAJZQAAW+m9eGQsiL4OFPjQacAA/sN+IoIuZ1ZLgB2xNwe42Wytdb5ieJqKDznpwAqOlJACbnwwAAAA"
   },
-  "team-doctor-4": {
-    "src": "/images/team-doctor-4.jpg",
-    "w": 900,
-    "h": 600,
-    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAwCdASoUAA0APwFqrU6rJiQiMAgBYCAJZQDG9BogHQ1pf5XjQAD40oIPhkVVOD//wmyYxzsN6JIBDP2KE/6EiXp2LwAA"
+  "team-doctor-5": {
+    "src": "/images/team-doctor-5.jpg",
+    "w": 800,
+    "h": 1050,
+    "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwBACdASoUABoAPvlsrk6qpiSiMBgMAVAfCWwAvzgGPXydWYHuoK4m4pEAJQjAAPnbyyVkReQ+Vp6fMkPy8j05HaNok/47HmDusQiD77QO4t6ixd6VhX1ymJvwgG96ZncMiLumN3v1XFyUaTiaOXhgAAA="
   },
-  "team-doctor-m": {
-    "src": "/images/team-doctor-m.jpg",
-    "w": 900,
-    "h": 600,
-    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAgCdASoUAA0APwFqrU6rJiQiMAgBYCAJZQAAQPzjAAD+Zggo7tVTVmI3TCMPBa+SP0mTPGSFgPjuZfM9RcZT4mT839XbrtAAAA=="
+  "team-doctor-6": {
+    "src": "/images/team-doctor-6.jpg",
+    "w": 800,
+    "h": 1050,
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBQCdASoUABoAPwFqr1ErJaQisBgIAWAgCWwAnTKEePe6ACJbXKQo4BtcexJxeNBRyZAKd4gAAP4UisljC6jPVAWIVJg5D8Hcnbf/VoD5/lwjle3ebi+se6tKQNpAs8FX7Inkj1hukbFNwzTMjmj0qWPgvX6M40i/CLVrK6iXMc1IwiBivfy7lztAy9iph5EBsSqW0AA="
   },
   "team-nurse": {
     "src": "/images/team-nurse.jpg",
