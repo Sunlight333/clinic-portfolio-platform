@@ -48,7 +48,7 @@ export function Testimonials({ dict }: { dict: Dictionary }) {
 
                 <Stars />
 
-                <blockquote className="mt-5 flex-1 text-[1.06rem] leading-relaxed font-medium text-ink sm:text-[1.12rem]">
+                <blockquote className="mt-5 flex-1 text-[1.12rem] leading-relaxed font-medium text-ink sm:text-[1.18rem]">
                   “{item.quote}”
                 </blockquote>
 
@@ -61,10 +61,10 @@ export function Testimonials({ dict }: { dict: Dictionary }) {
                     sizes="80px"
                   />
                   <span className="flex flex-col">
-                    <span className="font-display text-[1.06rem] font-extrabold tracking-tight">
+                    <span className="font-display text-[1.12rem] font-extrabold tracking-tight">
                       {item.name}
                     </span>
-                    <span className="text-[0.88rem] font-bold text-inkmute">{item.role}</span>
+                    <span className="text-[0.96rem] font-bold text-inkmute">{item.role}</span>
                   </span>
                   <span className="ml-auto hidden sm:block">
                     <IconOrb icon="check" tone={i % 2 ? "rose" : "mint"} size="sm" />

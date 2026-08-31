@@ -202,7 +202,7 @@ export function ServicePage({
                     <h3 className="font-display mt-7 text-[1.32rem] font-extrabold tracking-tight">
                       {h.title}
                     </h3>
-                    <p className="mt-3 text-[1rem] leading-relaxed text-inksoft">{h.desc}</p>
+                    <p className="mt-3 text-[1.06rem] leading-relaxed text-inksoft">{h.desc}</p>
                   </article>
                 </TiltCard>
               </Reveal>
@@ -242,10 +242,10 @@ export function ServicePage({
                   <h3 className="font-display mt-6 text-[1.28rem] leading-tight font-extrabold tracking-tight">
                     {t.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-[0.98rem] leading-relaxed text-inksoft">{t.desc}</p>
+                  <p className="mt-3 flex-1 text-[1.05rem] leading-relaxed text-inksoft">{t.desc}</p>
 
                   <div className="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
-                    <span className="flex items-center gap-2 text-[0.88rem] font-bold text-inkmute">
+                    <span className="flex items-center gap-2 text-[0.96rem] font-bold text-inkmute">
                       <Glyph name="clock" className="h-4 w-4" strokeWidth={3} />
                       {t.meta}
                     </span>
@@ -297,7 +297,7 @@ export function ServicePage({
                     <h3 className="font-display text-[1.24rem] font-extrabold tracking-tight">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-[0.99rem] leading-relaxed text-inksoft">{step.desc}</p>
+                    <p className="mt-2 text-[1.05rem] leading-relaxed text-inksoft">{step.desc}</p>
                   </div>
                   <IconOrb icon={cfg.processIcons[i]} tone={cfg.tone} size="lg" className="hidden sm:block" />
                 </div>

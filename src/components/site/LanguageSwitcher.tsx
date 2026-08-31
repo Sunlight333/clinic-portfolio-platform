@@ -87,7 +87,7 @@ export function LanguageSwitcher({ locale, label, hint, variant = "compact" }: P
         className="group flex items-center gap-2 rounded-full border border-white bg-white/75 py-1.5 pr-3.5 pl-1.5 shadow-soft backdrop-blur-md transition-all duration-400 hover:shadow-lift"
       >
         <FlagDisc locale={locale} size={34} />
-        <span className="font-display text-[0.98rem] font-extrabold tracking-tight">
+        <span className="font-display text-[1.05rem] font-extrabold tracking-tight">
           {LOCALE_META[locale].code}
         </span>
         <Glyph
@@ -123,10 +123,10 @@ export function LanguageSwitcher({ locale, label, hint, variant = "compact" }: P
                 >
                   <FlagDisc locale={l} size={38} />
                   <span className="flex flex-col leading-tight">
-                    <span className="font-display text-[1.02rem] font-extrabold">
+                    <span className="font-display text-[1.08rem] font-extrabold">
                       {LOCALE_META[l].native}
                     </span>
-                    <span className="text-[0.78rem] text-inkmute">{LOCALE_META[l].region}</span>
+                    <span className="text-[0.86rem] text-inkmute">{LOCALE_META[l].region}</span>
                   </span>
                   {active && (
                     <Glyph name="check" strokeWidth={4} className="ml-auto h-4 w-4 text-coral-500" />

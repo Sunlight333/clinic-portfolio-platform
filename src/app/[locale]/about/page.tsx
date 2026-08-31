@@ -79,11 +79,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     key={s.label}
                     className="rounded-[1.5rem] border border-white bg-white/70 px-4 py-5 text-center shadow-soft backdrop-blur-md"
                   >
-                    <dt className="font-display flex items-baseline justify-center text-[2rem] leading-none font-extrabold tracking-tight">
+                    <dt className="font-display flex items-baseline justify-center gap-1 text-[2rem] leading-none font-extrabold tracking-tight">
                       <Counter to={s.value} />
                       <span className="text-gradient-warm text-[0.66em]">{s.suffix}</span>
                     </dt>
-                    <dd className="mt-2 text-[0.8rem] leading-tight font-bold text-inkmute">
+                    <dd className="mt-2 text-[0.88rem] leading-tight font-bold text-inkmute">
                       {s.label}
                     </dd>
                   </div>
@@ -118,7 +118,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   sizes="(max-width:1024px) 45vw, 260px"
                 />
               </div>
-              <span className="absolute -bottom-8 left-[38%] hidden lg:block">
+              <span className="absolute -bottom-9 -left-9 hidden lg:block">
                 <IconOrb icon="heartPulse" tone="rose" size="2xl" halo pulse />
               </span>
             </div>
@@ -142,11 +142,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <span className="glass-strong absolute -bottom-6 -right-4 flex items-center gap-4 rounded-[1.6rem] p-5">
                 <IconOrb icon="leaf" tone="mint" size="lg" />
                 <span className="flex flex-col leading-none">
-                  <span className="font-display flex items-baseline text-[2rem] font-extrabold tracking-tight">
+                  <span className="font-display flex items-baseline gap-1 text-[2rem] font-extrabold tracking-tight">
                     {dict.hero.stats[0].value}
                     <span className="text-gradient-warm text-[0.6em]">{dict.hero.stats[0].suffix}</span>
                   </span>
-                  <span className="mt-2 max-w-[10rem] text-[0.8rem] font-bold text-inkmute">
+                  <span className="mt-2 max-w-[10rem] text-[0.88rem] font-bold text-inkmute">
                     {dict.hero.stats[0].label}
                   </span>
                 </span>
@@ -166,8 +166,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <div className="mt-8 flex flex-col gap-5">
               {t.story.map((paragraph, i) => (
                 <Reveal key={paragraph.slice(0, 24)} delay={i * 0.08} direction="left">
-                  <p className="text-[1.05rem] leading-relaxed text-inksoft">
-                    <span className="float-left mr-3 mt-1 grid h-8 w-8 place-items-center rounded-full bg-coral-50 font-display text-[0.9rem] font-extrabold text-coral-600">
+                  <p className="text-[1.1rem] leading-relaxed text-inksoft">
+                    <span className="float-left mr-3 mt-1 grid h-8 w-8 place-items-center rounded-full bg-coral-50 font-display text-[0.98rem] font-extrabold text-coral-600">
                       {i + 1}
                     </span>
                     {paragraph}
@@ -206,7 +206,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                       <h3 className="font-display mt-6 text-[1.22rem] font-extrabold tracking-tight">
                         {v.title}
                       </h3>
-                      <p className="mt-3 text-[0.97rem] leading-relaxed text-inksoft">{v.desc}</p>
+                      <p className="mt-3 text-[1.04rem] leading-relaxed text-inksoft">{v.desc}</p>
                     </article>
                   </TiltCard>
                 </Reveal>
@@ -236,10 +236,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <div className="flex h-full items-center gap-4 rounded-[1.7rem] border border-white bg-white/80 p-5 shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1.5">
                   <IconOrb icon={CRED_ICONS[i]} tone={(["coral", "mint", "lilac", "sky"] as Tone[])[i]} size="lg" />
                   <div>
-                    <p className="font-display text-[1.06rem] font-extrabold tracking-tight">
+                    <p className="font-display text-[1.12rem] font-extrabold tracking-tight">
                       {c.label}
                     </p>
-                    <p className="mt-1 text-[0.88rem] leading-snug text-inksoft">{c.desc}</p>
+                    <p className="mt-1 text-[0.96rem] leading-snug text-inksoft">{c.desc}</p>
                   </div>
                 </div>
               </Reveal>
@@ -261,7 +261,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   {dict.tech.eyebrow}
                 </Eyebrow>
                 <h2 className="text-h2 mt-5">{t.buildTitle}</h2>
-                <p className="mt-5 max-w-[54ch] text-[1.05rem] leading-relaxed text-inksoft">
+                <p className="mt-5 max-w-[54ch] text-[1.1rem] leading-relaxed text-inksoft">
                   {t.buildLead}
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">

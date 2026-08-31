@@ -108,11 +108,11 @@ export function Services({ locale, dict }: { locale: Locale; dict: Dictionary })
                     </div>
 
                     <div className="mt-12 flex flex-1 flex-col px-2">
-                      <span className="mb-3 inline-flex w-fit items-center gap-2 rounded-full border border-white bg-white/80 px-3.5 py-1.5 text-[0.72rem] font-extrabold tracking-[0.16em] text-inksoft uppercase shadow-soft">
+                      <span className="mb-3 inline-flex w-fit items-center gap-2 rounded-full border border-white bg-white/80 px-3.5 py-1.5 text-[0.8rem] font-extrabold tracking-[0.16em] text-inksoft uppercase shadow-soft">
                         {c.tag}
                       </span>
                       <h3 className="text-h3">{c.title}</h3>
-                      <p className="mt-3 text-[1rem] leading-relaxed text-inksoft">{c.desc}</p>
+                      <p className="mt-3 text-[1.06rem] leading-relaxed text-inksoft">{c.desc}</p>
 
                       <ul className="mt-6 flex flex-col gap-3">
                         {c.points.map((point) => (
@@ -124,14 +124,14 @@ export function Services({ locale, dict }: { locale: Locale; dict: Dictionary })
                                 className={`h-3.5 w-3.5 ${card.accent}`}
                               />
                             </span>
-                            <span className="text-[0.96rem] font-bold">{point}</span>
+                            <span className="text-[1.04rem] font-bold">{point}</span>
                           </li>
                         ))}
                       </ul>
 
                       <Link
                         href={p(card.href)}
-                        className="font-display mt-8 inline-flex items-center gap-2.5 self-start rounded-full border-[1.6px] border-ink/12 bg-white/70 px-6 py-3 text-[1rem] font-extrabold transition-all duration-400 hover:border-transparent hover:bg-ink hover:text-white"
+                        className="font-display mt-8 inline-flex items-center gap-2.5 self-start rounded-full border-[1.6px] border-ink/12 bg-white/70 px-6 py-3 text-[1.06rem] font-extrabold transition-all duration-400 hover:border-transparent hover:bg-ink hover:text-white"
                       >
                         {dict.services.cta}
                         <Glyph

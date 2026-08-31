@@ -64,7 +64,7 @@ export function TechStack({ dict }: { dict: Dictionary }) {
                   <h4 className="font-display mt-6 text-[1.3rem] font-extrabold tracking-tight">
                     {cap.title}
                   </h4>
-                  <p className="mt-2.5 text-[0.98rem] leading-relaxed text-inksoft">{cap.desc}</p>
+                  <p className="mt-2.5 text-[1.05rem] leading-relaxed text-inksoft">{cap.desc}</p>
                 </article>
               </Reveal>
             );
@@ -98,7 +98,7 @@ export function TechStack({ dict }: { dict: Dictionary }) {
               <div className="flex flex-col justify-center p-8 sm:p-10">
                 <span className="text-eyebrow text-coral-600">{dict.tech.author}</span>
                 <h3 className="text-h3 mt-3">{dict.tech.authorRole}</h3>
-                <p className="mt-4 max-w-[54ch] text-[1.02rem] leading-relaxed text-inksoft">
+                <p className="mt-4 max-w-[54ch] text-[1.08rem] leading-relaxed text-inksoft">
                   {dict.tech.authorBio}
                 </p>
 
@@ -111,7 +111,7 @@ export function TechStack({ dict }: { dict: Dictionary }) {
                       <dt className="font-display text-[1.65rem] leading-none font-extrabold tracking-tight text-gradient-warm">
                         {m.value}
                       </dt>
-                      <dd className="mt-2 text-[0.76rem] leading-tight font-bold text-inkmute">
+                      <dd className="mt-2 text-[0.84rem] leading-tight font-bold text-inkmute">
                         {m.label}
                       </dd>
                     </div>

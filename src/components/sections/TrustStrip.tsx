@@ -24,7 +24,7 @@ export function TrustStrip({ dict }: { dict: Dictionary }) {
             <span className={`grid h-11 w-11 place-items-center rounded-full ${TONE[i % TONE.length]}`}>
               <Glyph name={ICONS[i % ICONS.length]} className="h-5 w-5" strokeWidth={2.8} />
             </span>
-            <span className="font-display text-[1.02rem] font-extrabold tracking-tight whitespace-nowrap">
+            <span className="font-display text-[1.08rem] font-extrabold tracking-tight whitespace-nowrap">
               {item}
             </span>
           </span>

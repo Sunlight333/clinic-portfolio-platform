@@ -143,7 +143,7 @@
     background-color: var(--color-cream);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    font-size: 17px;
+    font-size: 17.5px;
     line-height: 1.65;
     letter-spacing: -0.006em;
     -webkit-font-smoothing: antialiased;
@@ -210,33 +210,45 @@
   letter-spacing: -0.034em;
 }
 @utility text-h3 {
-  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  font-size: clamp(1.58rem, 2.4vw, 2.2rem);
   line-height: 1.12;
   letter-spacing: -0.026em;
 }
 @utility text-lead {
-  font-size: clamp(1.12rem, 1.45vw, 1.4rem);
+  font-size: clamp(1.18rem, 1.5vw, 1.46rem);
   line-height: 1.6;
   letter-spacing: -0.008em;
 }
 @utility text-eyebrow {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
+/* `background-clip: text` paints only inside the element's background box, so
+   the overhang of an italic serif (the tail of a final s, z, y…) would be
+   clipped away. The padding widens the paint box; the negative margin keeps
+   the layout identical, and `box-decoration-break` extends it to every line. */
 @utility text-gradient-warm {
   background-image: linear-gradient(104deg, var(--color-coral-500) 4%, var(--color-rose-400) 46%, var(--color-lilac-400) 96%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-inline: 0.14em;
+  margin-inline: -0.14em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 @utility text-gradient-fresh {
   background-image: linear-gradient(104deg, var(--color-mint-500) 0%, var(--color-sky-400) 60%, var(--color-lilac-400) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-inline: 0.14em;
+  margin-inline: -0.14em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 @utility glass {

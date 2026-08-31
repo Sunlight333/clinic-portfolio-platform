@@ -47,7 +47,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-[700px] flex-col justify-center overflow-hidden pt-[126px] pb-12 lg:h-[100svh] lg:max-h-[1060px] lg:pt-[clamp(158px,21svh,190px)] lg:pb-12"
+      className="relative flex min-h-[700px] flex-col justify-center overflow-hidden pt-[126px] pb-12 lg:h-[100svh] lg:max-h-[1060px] lg:pt-[clamp(170px,21svh,192px)] lg:pb-12"
     >
       {/* ---------------------------------------------------------- backdrop */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
@@ -90,7 +90,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <span className="absolute inset-0 animate-pulse-ring rounded-full ring-2 ring-mint-300" />
               <span className="h-2.5 w-2.5 rounded-full bg-mint-400" />
             </span>
-            <span className="text-[0.86rem] font-extrabold tracking-tight text-ink">
+            <span className="text-[0.94rem] font-extrabold tracking-tight text-ink">
               {dict.hero.badge}
             </span>
           </motion.span>
@@ -117,7 +117,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.42, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lead mt-5 max-w-[54ch] text-inksoft [@media(max-height:820px)]:mt-4 [@media(max-height:820px)]:text-[1rem]"
+            className="text-lead mt-5 max-w-[54ch] text-inksoft [@media(max-height:820px)]:mt-4 [@media(max-height:820px)]:text-[1.06rem]"
           >
             {dict.hero.lead}
           </motion.p>
@@ -154,7 +154,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                   <Counter to={s.value} />
                   <span className="text-gradient-warm text-[0.72em]">{s.suffix}</span>
                 </dt>
-                <dd className="mt-1 text-[0.82rem] leading-tight font-semibold text-inkmute">
+                <dd className="mt-1 text-[0.9rem] leading-tight font-semibold text-inkmute">
                   {s.label}
                 </dd>
               </div>
@@ -212,10 +212,10 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                     <Glyph name="sparkle" className="h-4 w-4 text-white" strokeWidth={3} />
                   </span>
                   <span className="flex flex-col leading-tight">
-                    <span className="font-display text-[0.94rem] font-extrabold">
+                    <span className="font-display text-[1.02rem] font-extrabold">
                       {dict.hero.videoTitle}
                     </span>
-                    <span className="text-[0.74rem] font-semibold text-inkmute">
+                    <span className="text-[0.82rem] font-semibold text-inkmute">
                       {dict.hero.videoSub}
                     </span>
                   </span>
@@ -241,7 +241,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <span className="font-display text-[1.7rem] leading-none font-extrabold text-ink">4.9</span>
               <span className="flex flex-col">
                 <Stars />
-                <span className="mt-1 text-[0.72rem] font-bold text-inkmute">
+                <span className="mt-1 text-[0.8rem] font-bold text-inkmute">
                   {dict.hero.floatingRating}
                 </span>
               </span>
@@ -256,10 +256,10 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             >
               <IconOrb icon="calendar" tone="mint" size="sm" />
               <span className="flex flex-col leading-tight">
-                <span className="text-[0.72rem] font-bold tracking-wide text-inkmute uppercase">
+                <span className="text-[0.8rem] font-bold tracking-wide text-inkmute uppercase">
                   {dict.hero.floatingSlot}
                 </span>
-                <span className="font-display text-[1.02rem] font-extrabold">
+                <span className="font-display text-[1.08rem] font-extrabold">
                   {dict.hero.floatingSlotValue}
                 </span>
               </span>
@@ -290,7 +290,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <motion.a
         href="#services"
         style={reduce ? undefined : { opacity: fade }}
-        className="absolute right-[6%] bottom-6 hidden flex-col items-center gap-2 text-[0.76rem] font-extrabold tracking-[0.2em] text-inkmute uppercase lg:flex"
+        className="absolute right-[6%] bottom-6 hidden flex-col items-center gap-2 text-[0.84rem] font-extrabold tracking-[0.2em] text-inkmute uppercase lg:flex"
       >
         {dict.hero.scroll}
         <span className="relative grid h-11 w-7 place-items-start rounded-full border-2 border-ink/20 p-1.5">

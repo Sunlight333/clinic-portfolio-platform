@@ -82,7 +82,7 @@ export function Header({ locale, dict }: Props) {
   };
 
   const navLink =
-    "font-display relative rounded-full px-5 py-3 text-[1.06rem] font-extrabold tracking-[-0.025em] transition-colors duration-300";
+    "font-display relative rounded-full px-5 py-3 text-[1.12rem] font-extrabold tracking-[-0.025em] transition-colors duration-300";
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-[80]">
@@ -92,7 +92,7 @@ export function Header({ locale, dict }: Props) {
           scrolled ? "h-0 opacity-0" : "h-11 opacity-100"
         }`}
       >
-        <div className="container-x flex h-11 items-center justify-between text-[0.86rem] font-semibold text-inksoft">
+        <div className="container-x flex h-11 items-center justify-between text-[0.94rem] font-semibold text-inksoft">
           <span className="flex items-center gap-2.5">
             <Glyph name="clock" className="h-4 w-4 text-coral-500" strokeWidth={3} />
             {dict.nav.quickHours}
@@ -177,9 +177,13 @@ export function Header({ locale, dict }: Props) {
               hint={dict.nav.languageHint}
               variant="compact"
             />
-            <Button href={p("/contact")} size="md" className="hidden sm:inline-flex" icon="calendar">
-              {dict.nav.book}
-            </Button>
+            {/* wrapped rather than given a `hidden` class: Button already sets
+                `inline-flex`, and display utilities win by stylesheet order */}
+            <span className="hidden sm:inline-flex">
+              <Button href={p("/contact")} size="md" icon="calendar">
+                {dict.nav.book}
+              </Button>
+            </span>
 
             <button
               type="button"
@@ -234,8 +238,8 @@ export function Header({ locale, dict }: Props) {
                         <h3 className="font-display text-[1.16rem] font-extrabold tracking-tight">
                           {card.title}
                         </h3>
-                        <p className="mt-1.5 text-[0.9rem] leading-snug text-inksoft">{card.desc}</p>
-                        <span className="mt-3 inline-flex items-center gap-1.5 text-[0.86rem] font-extrabold text-coral-600">
+                        <p className="mt-1.5 text-[0.98rem] leading-snug text-inksoft">{card.desc}</p>
+                        <span className="mt-3 inline-flex items-center gap-1.5 text-[0.94rem] font-extrabold text-coral-600">
                           {dict.services.cta}
                           <Glyph
                             name="arrowRight"
@@ -258,10 +262,10 @@ export function Header({ locale, dict }: Props) {
                     >
                       <IconOrb icon={k === "about" ? "users" : "pin"} tone={k === "about" ? "lilac" : "amber"} size="md" />
                       <span className="flex flex-col">
-                        <span className="font-display text-[1.04rem] font-extrabold tracking-tight">
+                        <span className="font-display text-[1.1rem] font-extrabold tracking-tight">
                           {dict.navCards[k].title}
                         </span>
-                        <span className="text-[0.84rem] leading-snug text-inksoft">
+                        <span className="text-[0.92rem] leading-snug text-inksoft">
                           {dict.navCards[k].desc}
                         </span>
                       </span>
@@ -345,7 +349,7 @@ export function Header({ locale, dict }: Props) {
                         <span className="font-display text-[1.25rem] font-extrabold tracking-tight">
                           {item.label}
                         </span>
-                        <span className="truncate text-[0.86rem] text-inksoft">{item.desc}</span>
+                        <span className="truncate text-[0.94rem] text-inksoft">{item.desc}</span>
                       </span>
                       <Glyph name="arrowRight" strokeWidth={3.2} className="ml-auto h-5 w-5 text-coral-500" />
                     </Link>
@@ -365,7 +369,7 @@ export function Header({ locale, dict }: Props) {
                 </Button>
                 <a
                   href={`tel:${dict.footer.phone.replace(/\s/g, "")}`}
-                  className="flex items-center justify-center gap-2.5 text-[0.95rem] font-bold text-inksoft"
+                  className="flex items-center justify-center gap-2.5 text-[1.02rem] font-bold text-inksoft"
                 >
                   <Glyph name="phone" className="h-4 w-4 text-coral-500" strokeWidth={3} />
                   {dict.footer.phone}

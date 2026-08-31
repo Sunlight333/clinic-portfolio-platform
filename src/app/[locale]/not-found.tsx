@@ -25,7 +25,7 @@ export default function NotFound() {
           </Button>
           <Link
             href="/en/contact"
-            className="font-display inline-flex h-14 items-center rounded-full border-[1.6px] border-ink/12 bg-white/70 px-8 text-[1.02rem] font-extrabold transition-colors hover:border-coral-300 hover:text-coral-600"
+            className="font-display inline-flex h-14 items-center rounded-full border-[1.6px] border-ink/12 bg-white/70 px-8 text-[1.08rem] font-extrabold transition-colors hover:border-coral-300 hover:text-coral-600"
           >
             Contact
           </Link>

@@ -6,9 +6,9 @@ type Variant = "primary" | "ghost" | "outline" | "invert" | "soft";
 type Size = "md" | "lg" | "xl";
 
 const SIZE: Record<Size, string> = {
-  md: "h-12 px-6 text-[0.95rem]",
-  lg: "h-14 px-8 text-[1.02rem]",
-  xl: "h-16 px-10 text-[1.08rem]",
+  md: "h-12 px-6 text-[1.02rem]",
+  lg: "h-14 px-8 text-[1.08rem]",
+  xl: "h-16 px-10 text-[1.14rem]",
 };
 
 const ICON: Record<Size, number> = { md: 17, lg: 19, xl: 21 };

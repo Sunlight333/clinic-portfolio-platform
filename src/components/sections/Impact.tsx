@@ -60,7 +60,7 @@ export function Impact({ dict }: { dict: Dictionary }) {
                       <h3 className="font-display text-[1.2rem] font-extrabold tracking-tight">
                         {pillar.title}
                       </h3>
-                      <p className="mt-1.5 text-[0.98rem] leading-relaxed text-inksoft">{pillar.desc}</p>
+                      <p className="mt-1.5 text-[1.05rem] leading-relaxed text-inksoft">{pillar.desc}</p>
                     </div>
                   </div>
                 </Reveal>
@@ -97,8 +97,9 @@ export function Impact({ dict }: { dict: Dictionary }) {
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_90%_at_20%_10%,rgba(255,255,255,.42),transparent_62%)]"
                 />
-                <div className="absolute inset-x-6 bottom-6 flex items-center justify-end gap-3">
-                  <span className="glass rounded-full px-5 py-2.5 text-[0.9rem] font-extrabold">
+                {/* centred: the blob curves inward at both bottom corners */}
+                <div className="absolute inset-x-6 bottom-9 flex items-center justify-center gap-3">
+                  <span className="glass rounded-full px-5 py-2.5 text-[0.98rem] font-extrabold">
                     {dict.impact.videoCaption}
                   </span>
                   <span className="glass grid h-11 w-11 place-items-center rounded-full">
@@ -131,11 +132,11 @@ export function Impact({ dict }: { dict: Dictionary }) {
               <div
                 className={`${STAT_SHAPE[i]} flex h-full flex-col items-center justify-center border border-white bg-white/80 px-6 py-9 text-center shadow-lift backdrop-blur-md transition-transform duration-500 hover:-translate-y-1.5`}
               >
-                <p className="font-display flex items-baseline text-[clamp(2.6rem,4.4vw,3.6rem)] leading-none font-extrabold tracking-tight">
+                <p className="font-display flex items-baseline gap-1 text-[clamp(2.6rem,4.4vw,3.6rem)] leading-none font-extrabold tracking-tight">
                   <Counter to={stat.value} />
                   <span className="text-gradient-warm text-[0.62em]">{stat.suffix}</span>
                 </p>
-                <p className="mt-3 max-w-[18ch] text-[0.94rem] leading-snug font-bold text-inksoft">
+                <p className="mt-3 max-w-[18ch] text-[1.02rem] leading-snug font-bold text-inksoft">
                   {stat.label}
                 </p>
               </div>

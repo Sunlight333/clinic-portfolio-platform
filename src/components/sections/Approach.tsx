@@ -47,7 +47,7 @@ export function Approach({ dict }: { dict: Dictionary }) {
               </span>
               <span className="glass-strong absolute -top-5 right-2 rounded-[1.3rem] px-5 py-3">
                 <span className="font-display block text-[1.5rem] leading-none font-extrabold">20</span>
-                <span className="text-[0.76rem] font-bold text-inkmute">min · 1:1</span>
+                <span className="text-[0.84rem] font-bold text-inkmute">min · 1:1</span>
               </span>
             </div>
           </Reveal>
@@ -93,7 +93,7 @@ export function Approach({ dict }: { dict: Dictionary }) {
                     <h3 className="font-display mt-4 text-[1.28rem] font-extrabold tracking-tight">
                       {step.title}
                     </h3>
-                    <p className="mt-2.5 text-[0.96rem] leading-relaxed text-inksoft">{step.desc}</p>
+                    <p className="mt-2.5 text-[1.04rem] leading-relaxed text-inksoft">{step.desc}</p>
                   </div>
                 </Reveal>
               );

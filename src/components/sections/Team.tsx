@@ -69,8 +69,8 @@ export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                     <h3 className="font-display text-[1.22rem] leading-tight font-extrabold tracking-tight">
                       {member.name}
                     </h3>
-                    <p className="mt-1.5 text-[0.92rem] font-extrabold text-coral-600">{member.role}</p>
-                    <p className="mt-2 flex items-start gap-2 text-[0.92rem] leading-snug text-inksoft">
+                    <p className="mt-1.5 text-[1rem] font-extrabold text-coral-600">{member.role}</p>
+                    <p className="mt-2 flex items-start gap-2 text-[1rem] leading-snug text-inksoft">
                       <Glyph
                         name="check"
                         strokeWidth={4}

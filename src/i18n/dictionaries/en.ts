@@ -374,7 +374,6 @@ const en = {
     newsletterCta: "Subscribe",
     newsletterNote: "No marketing noise. Unsubscribe in one click.",
     rights: "All rights reserved.",
-    madeBy: "Designed & engineered by the Aurélia studio team",
     legal: ["Privacy", "Terms", "Cookies"],
     address: "Av. Paulista 1600 · São Paulo · Brazil",
     phone: "+55 11 4000-2020",

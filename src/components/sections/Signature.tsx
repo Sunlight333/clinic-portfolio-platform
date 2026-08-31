@@ -67,7 +67,7 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
                 <div className="flex items-start justify-between gap-4">
                   <IconOrb icon={META[0].icon} tone={META[0].tone} size="xl" halo />
                   {items[0].badge && (
-                    <span className="rounded-full bg-white/90 px-4 py-2 text-[0.74rem] font-extrabold tracking-[0.14em] text-coral-600 uppercase backdrop-blur-md">
+                    <span className="rounded-full bg-white/90 px-4 py-2 text-[0.82rem] font-extrabold tracking-[0.14em] text-coral-600 uppercase backdrop-blur-md">
                       {items[0].badge}
                     </span>
                   )}
@@ -75,15 +75,15 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
 
                 <div className="mt-auto text-white">
                   <h3 className="text-h2 max-w-[16ch] drop-shadow-sm">{items[0].title}</h3>
-                  <p className="mt-3 max-w-[46ch] text-[1.05rem] leading-relaxed text-white/90">
+                  <p className="mt-3 max-w-[46ch] text-[1.1rem] leading-relaxed text-white/90">
                     {items[0].desc}
                   </p>
                   <div className="mt-6 flex flex-wrap items-center gap-3">
-                    <span className="glass flex items-center gap-2 rounded-full px-4 py-2 text-[0.9rem] font-extrabold text-ink">
+                    <span className="glass flex items-center gap-2 rounded-full px-4 py-2 text-[0.98rem] font-extrabold text-ink">
                       <Glyph name="clock" className="h-4 w-4 text-coral-500" strokeWidth={3} />
                       {items[0].meta}
                     </span>
-                    <span className="font-display rounded-full bg-white px-5 py-2 text-[1.05rem] font-extrabold text-ink">
+                    <span className="font-display rounded-full bg-white px-5 py-2 text-[1.1rem] font-extrabold text-ink">
                       {items[0].price}
                     </span>
                   </div>
@@ -100,10 +100,10 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
               <IconOrb icon={META[1].icon} tone={META[1].tone} size="xl" />
               <div className="mt-7">
                 <h3 className="text-h3">{items[1].title}</h3>
-                <p className="mt-3 text-[0.98rem] leading-relaxed text-inksoft">{items[1].desc}</p>
+                <p className="mt-3 text-[1.05rem] leading-relaxed text-inksoft">{items[1].desc}</p>
               </div>
               <div className="mt-7 flex items-center justify-between border-t border-ink/10 pt-5">
-                <span className="text-[0.86rem] font-bold text-inkmute">{items[1].meta}</span>
+                <span className="text-[0.94rem] font-bold text-inkmute">{items[1].meta}</span>
                 <span className="font-display text-[1.28rem] font-extrabold">{items[1].price}</span>
               </div>
             </article>
@@ -121,7 +121,7 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
                     <IconOrb icon={m.icon} tone={m.tone} size="lg" />
                     {item.badge && (
                       <span
-                        className={`rounded-full px-3.5 py-1.5 text-[0.7rem] font-extrabold tracking-[0.14em] uppercase ${m.badgeTone}`}
+                        className={`rounded-full px-3.5 py-1.5 text-[0.78rem] font-extrabold tracking-[0.14em] uppercase ${m.badgeTone}`}
                       >
                         {item.badge}
                       </span>
@@ -130,9 +130,9 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
                   <h3 className="mt-6 text-[1.35rem] leading-tight font-extrabold tracking-tight font-display">
                     {item.title}
                   </h3>
-                  <p className="mt-3 flex-1 text-[0.96rem] leading-relaxed text-inksoft">{item.desc}</p>
+                  <p className="mt-3 flex-1 text-[1.04rem] leading-relaxed text-inksoft">{item.desc}</p>
                   <div className="mt-6 flex items-center justify-between border-t border-ink/10 pt-5">
-                    <span className="flex items-center gap-2 text-[0.86rem] font-bold text-inkmute">
+                    <span className="flex items-center gap-2 text-[0.94rem] font-bold text-inkmute">
                       <Glyph name="clock" className="h-4 w-4" strokeWidth={3} />
                       {item.meta}
                     </span>
@@ -150,7 +150,7 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
               <div className="flex-1 text-center lg:text-left">
                 <span className="text-eyebrow text-coral-600">{items[5].badge}</span>
                 <h3 className="text-h3 mt-2">{items[5].title}</h3>
-                <p className="mt-3 max-w-[60ch] text-[1.02rem] leading-relaxed text-inksoft">
+                <p className="mt-3 max-w-[60ch] text-[1.08rem] leading-relaxed text-inksoft">
                   {items[5].desc}
                 </p>
               </div>
@@ -159,7 +159,7 @@ export function Signature({ locale, dict }: { locale: Locale; dict: Dictionary }
                   <p className="font-display text-[2.4rem] leading-none font-extrabold tracking-tight">
                     {items[5].price}
                   </p>
-                  <p className="mt-1.5 text-[0.86rem] font-bold text-inkmute">{items[5].meta}</p>
+                  <p className="mt-1.5 text-[0.94rem] font-bold text-inkmute">{items[5].meta}</p>
                 </div>
                 <Button href={p("/contact")} size="lg" icon="arrowRight">
                   {dict.common.bookNow}

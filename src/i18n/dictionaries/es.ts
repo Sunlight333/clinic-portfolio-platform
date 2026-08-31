@@ -376,7 +376,6 @@ const es: Dictionary = {
     newsletterCta: "Suscribirme",
     newsletterNote: "Sin ruido de marketing. Cancela con un clic.",
     rights: "Todos los derechos reservados.",
-    madeBy: "Diseño e ingeniería del equipo de estudio de Aurélia",
     legal: ["Privacidad", "Términos", "Cookies"],
     address: "Av. Paulista 1600 · São Paulo · Brasil",
     phone: "+55 11 4000-2020",

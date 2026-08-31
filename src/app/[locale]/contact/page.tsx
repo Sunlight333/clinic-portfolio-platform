@@ -87,10 +87,10 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 <IconOrb icon="pin" tone="coral" size="2xl" halo pulse />
               </span>
               <span className="glass-strong absolute -right-4 top-10 rounded-[1.4rem] px-5 py-3.5">
-                <span className="text-[0.72rem] font-extrabold tracking-[0.14em] text-inkmute uppercase">
+                <span className="text-[0.8rem] font-extrabold tracking-[0.14em] text-inkmute uppercase">
                   {dict.hero.floatingSlot}
                 </span>
-                <span className="font-display mt-1 block text-[1.1rem] font-extrabold">
+                <span className="font-display mt-1 block text-[1.16rem] font-extrabold">
                   {dict.hero.floatingSlotValue}
                 </span>
               </span>
@@ -113,7 +113,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                 >
                   <IconOrb icon={m.icon} tone={m.tone} size="xl" halo />
                   <span className="text-eyebrow text-inkmute">{c.label}</span>
-                  <span className="font-display text-[1.1rem] font-extrabold tracking-tight break-all">
+                  <span className="font-display text-[1.16rem] font-extrabold tracking-tight break-all">
                     {c.value}
                   </span>
                 </a>
@@ -146,8 +146,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                       key={h.d}
                       className="flex items-center justify-between border-b border-dashed border-ink/12 pb-3.5 last:border-0 last:pb-0"
                     >
-                      <dt className="text-[0.98rem] font-bold text-inksoft">{h.d}</dt>
-                      <dd className="font-display text-[1rem] font-extrabold">{h.h}</dd>
+                      <dt className="text-[1.05rem] font-bold text-inksoft">{h.d}</dt>
+                      <dd className="font-display text-[1.06rem] font-extrabold">{h.h}</dd>
                     </div>
                   ))}
                 </dl>
@@ -199,7 +199,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   <h3 className="font-display text-[1.2rem] font-extrabold tracking-tight">
                     {t.mapTitle}
                   </h3>
-                  <p className="mt-2 text-[0.96rem] leading-relaxed text-inksoft">{t.mapLead}</p>
+                  <p className="mt-2 text-[1.04rem] leading-relaxed text-inksoft">{t.mapLead}</p>
                   <Button
                     href="https://www.openstreetmap.org/search?query=Avenida%20Paulista%201600%20S%C3%A3o%20Paulo"
                     variant="outline"

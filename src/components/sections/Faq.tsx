@@ -34,13 +34,13 @@ export function FaqList({ items, tone = "coral" }: { items: FaqItem[]; tone?: "c
                 className="flex w-full items-center gap-4 p-5 text-left sm:p-6"
               >
                 <span
-                  className={`font-display grid h-10 w-10 shrink-0 place-items-center rounded-full text-[0.92rem] font-extrabold transition-colors duration-400 ${
+                  className={`font-display grid h-10 w-10 shrink-0 place-items-center rounded-full text-[1rem] font-extrabold transition-colors duration-400 ${
                     isOpen ? "bg-coral-500 text-white" : "bg-white text-inkmute shadow-soft"
                   }`}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="font-display flex-1 text-[1.08rem] leading-snug font-extrabold tracking-tight sm:text-[1.18rem]">
+                <span className="font-display flex-1 text-[1.14rem] leading-snug font-extrabold tracking-tight sm:text-[1.18rem]">
                   {item.q}
                 </span>
                 <span
@@ -64,7 +64,7 @@ export function FaqList({ items, tone = "coral" }: { items: FaqItem[]; tone?: "c
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.42, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <p className="px-5 pb-6 pl-[4.6rem] text-[1rem] leading-relaxed text-inksoft sm:px-6 sm:pl-[5rem]">
+                    <p className="px-5 pb-6 pl-[4.6rem] text-[1.06rem] leading-relaxed text-inksoft sm:px-6 sm:pl-[5rem]">
                       {item.a}
                     </p>
                   </motion.div>
@@ -83,10 +83,10 @@ export function FaqAside({ title, lead, phone }: { title: string; lead: string; 
     <div className="shape-arch-soft sticky top-40 hidden flex-col items-center border border-white bg-[linear-gradient(170deg,#fff,#fff2ea_60%,#ffe8f1)] p-8 text-center shadow-lift lg:flex">
       <IconOrb icon="message" tone="coral" size="2xl" halo pulse />
       <h3 className="font-display mt-6 text-[1.35rem] font-extrabold tracking-tight">{title}</h3>
-      <p className="mt-3 text-[0.98rem] leading-relaxed text-inksoft">{lead}</p>
+      <p className="mt-3 text-[1.05rem] leading-relaxed text-inksoft">{lead}</p>
       <a
         href={`tel:${phone.replace(/\s/g, "")}`}
-        className="font-display mt-6 inline-flex items-center gap-2.5 rounded-full bg-ink px-6 py-3.5 text-[1rem] font-extrabold text-white transition-transform duration-300 hover:scale-[1.03]"
+        className="font-display mt-6 inline-flex items-center gap-2.5 rounded-full bg-ink px-6 py-3.5 text-[1.06rem] font-extrabold text-white transition-transform duration-300 hover:scale-[1.03]"
       >
         <Glyph name="phone" strokeWidth={3} className="h-4 w-4" />
         {phone}

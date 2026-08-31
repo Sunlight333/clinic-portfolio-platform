@@ -37,8 +37,8 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
   }
 
   const field =
-    "h-14 w-full rounded-[1.2rem] border-[1.6px] border-white bg-white px-5 text-[1rem] font-semibold text-ink shadow-soft outline-none transition-colors placeholder:font-medium placeholder:text-inkmute focus:border-coral-300";
-  const label = "mb-2 block text-[0.86rem] font-extrabold tracking-tight text-inksoft";
+    "h-14 w-full rounded-[1.2rem] border-[1.6px] border-white bg-white px-5 text-[1.06rem] font-semibold text-ink shadow-soft outline-none transition-colors placeholder:font-medium placeholder:text-inkmute focus:border-coral-300";
+  const label = "mb-2 block text-[0.94rem] font-extrabold tracking-tight text-inksoft";
 
   return (
     <div className="ring-grad shape-ticket relative overflow-hidden bg-white/80 p-7 shadow-float backdrop-blur-xl sm:p-9">
@@ -58,11 +58,11 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             <h3 className="font-display mt-7 text-[1.6rem] font-extrabold tracking-tight">
               {t.success}
             </h3>
-            <p className="mt-3 max-w-[42ch] text-[1rem] text-inksoft">{t.successBody}</p>
+            <p className="mt-3 max-w-[42ch] text-[1.06rem] text-inksoft">{t.successBody}</p>
             <button
               type="button"
               onClick={() => setStatus("idle")}
-              className="font-display mt-7 rounded-full border-[1.6px] border-ink/12 px-6 py-3 text-[0.98rem] font-extrabold transition-colors hover:border-coral-300 hover:text-coral-600"
+              className="font-display mt-7 rounded-full border-[1.6px] border-ink/12 px-6 py-3 text-[1.05rem] font-extrabold transition-colors hover:border-coral-300 hover:text-coral-600"
             >
               {t.again}
             </button>
@@ -83,7 +83,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
                 <h2 className="font-display text-[1.5rem] font-extrabold tracking-tight">
                   {t.formTitle}
                 </h2>
-                <p className="mt-1.5 text-[0.98rem] text-inksoft">{t.formLead}</p>
+                <p className="mt-1.5 text-[1.05rem] text-inksoft">{t.formLead}</p>
               </div>
             </div>
 
@@ -134,7 +134,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
                   {t.preferredOptions.map((o, i) => (
                     <label
                       key={o}
-                      className="group relative cursor-pointer rounded-full border-[1.6px] border-white bg-white px-5 py-2.5 text-[0.92rem] font-bold shadow-soft transition-colors has-[:checked]:border-coral-300 has-[:checked]:bg-coral-50 has-[:checked]:text-coral-600"
+                      className="group relative cursor-pointer rounded-full border-[1.6px] border-white bg-white px-5 py-2.5 text-[1rem] font-bold shadow-soft transition-colors has-[:checked]:border-coral-300 has-[:checked]:bg-coral-50 has-[:checked]:text-coral-600"
                     >
                       <input
                         type="radio"
@@ -158,13 +158,13 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
                   name="message"
                   rows={4}
                   placeholder={t.messagePlaceholder}
-                  className="w-full rounded-[1.2rem] border-[1.6px] border-white bg-white px-5 py-4 text-[1rem] font-semibold text-ink shadow-soft outline-none transition-colors placeholder:font-medium placeholder:text-inkmute focus:border-coral-300"
+                  className="w-full rounded-[1.2rem] border-[1.6px] border-white bg-white px-5 py-4 text-[1.06rem] font-semibold text-ink shadow-soft outline-none transition-colors placeholder:font-medium placeholder:text-inkmute focus:border-coral-300"
                 />
                 {errors.message && <FieldError text={errors.message} />}
               </div>
             </div>
 
-            <label className="mt-6 flex cursor-pointer items-start gap-3 text-[0.92rem] font-semibold text-inksoft">
+            <label className="mt-6 flex cursor-pointer items-start gap-3 text-[1rem] font-semibold text-inksoft">
               <input
                 type="checkbox"
                 required
@@ -177,7 +177,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="font-display group/btn relative mt-7 inline-flex h-16 w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-[linear-gradient(120deg,#ff9060,#f9704a_45%,#f2769c)] text-[1.06rem] font-extrabold text-white shadow-[0_14px_32px_-14px_rgba(228,86,47,.95)] transition-transform duration-300 hover:scale-[1.01] active:scale-[.99] disabled:opacity-70"
+              className="font-display group/btn relative mt-7 inline-flex h-16 w-full items-center justify-center gap-3 overflow-hidden rounded-full bg-[linear-gradient(120deg,#ff9060,#f9704a_45%,#f2769c)] text-[1.12rem] font-extrabold text-white shadow-[0_14px_32px_-14px_rgba(228,86,47,.95)] transition-transform duration-300 hover:scale-[1.01] active:scale-[.99] disabled:opacity-70"
             >
               <span
                 aria-hidden
@@ -195,7 +195,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
 
 function FieldError({ text }: { text: string }) {
   return (
-    <p className="mt-2 flex items-center gap-1.5 pl-1 text-[0.84rem] font-bold text-coral-600">
+    <p className="mt-2 flex items-center gap-1.5 pl-1 text-[0.92rem] font-bold text-coral-600">
       <Glyph name="minus" strokeWidth={4} className="h-3 w-3" />
       {text}
     </p>

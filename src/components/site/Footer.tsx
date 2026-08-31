@@ -39,7 +39,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <IconOrb icon="mail" tone="coral" size="lg" />
               <div>
                 <h2 className="text-h3">{dict.footer.newsletterTitle}</h2>
-                <p className="mt-2.5 max-w-[46ch] text-[1.02rem] text-inksoft">
+                <p className="mt-2.5 max-w-[46ch] text-[1.08rem] text-inksoft">
                   {dict.footer.newsletterDesc}
                 </p>
               </div>
@@ -54,16 +54,16 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                   id="newsletter-email"
                   type="email"
                   placeholder={dict.footer.newsletterPlaceholder}
-                  className="h-14 flex-1 rounded-full border-[1.6px] border-white bg-white px-6 text-[1rem] font-semibold shadow-soft outline-none transition-colors placeholder:text-inkmute focus:border-coral-300"
+                  className="h-14 flex-1 rounded-full border-[1.6px] border-white bg-white px-6 text-[1.06rem] font-semibold shadow-soft outline-none transition-colors placeholder:text-inkmute focus:border-coral-300"
                 />
                 <button
                   type="submit"
-                  className="font-display h-14 shrink-0 rounded-full bg-[linear-gradient(120deg,#ff9060,#f9704a_45%,#f2769c)] px-8 text-[1rem] font-extrabold text-white shadow-[0_12px_28px_-12px_rgba(228,86,47,.9)] transition-transform duration-300 hover:scale-[1.03] active:scale-95"
+                  className="font-display h-14 shrink-0 rounded-full bg-[linear-gradient(120deg,#ff9060,#f9704a_45%,#f2769c)] px-8 text-[1.06rem] font-extrabold text-white shadow-[0_12px_28px_-12px_rgba(228,86,47,.9)] transition-transform duration-300 hover:scale-[1.03] active:scale-95"
                 >
                   {dict.footer.newsletterCta}
                 </button>
               </div>
-              <p className="pl-2 text-[0.84rem] text-inkmute">{dict.footer.newsletterNote}</p>
+              <p className="pl-2 text-[0.92rem] text-inkmute">{dict.footer.newsletterNote}</p>
             </form>
           </div>
         </div>
@@ -72,7 +72,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         <div className="grid gap-12 py-16 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           <div className="flex flex-col gap-6">
             <Logo size={54} />
-            <p className="max-w-[38ch] text-[1rem] leading-relaxed text-inksoft">{dict.footer.blurb}</p>
+            <p className="max-w-[38ch] text-[1.06rem] leading-relaxed text-inksoft">{dict.footer.blurb}</p>
             <LanguageSwitcher
               locale={locale}
               label={dict.nav.language}
@@ -88,7 +88,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <li key={l.href}>
                   <Link
                     href={p(l.href)}
-                    className="font-display group inline-flex items-center gap-2 text-[1.08rem] font-extrabold tracking-tight transition-colors hover:text-coral-600"
+                    className="font-display group inline-flex items-center gap-2 text-[1.14rem] font-extrabold tracking-tight transition-colors hover:text-coral-600"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-coral-300 transition-transform duration-300 group-hover:scale-150" />
                     {l.label}
@@ -105,7 +105,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <li key={l.href}>
                   <Link
                     href={p(l.href)}
-                    className="font-display group inline-flex items-center gap-2 text-[1.08rem] font-extrabold tracking-tight transition-colors hover:text-coral-600"
+                    className="font-display group inline-flex items-center gap-2 text-[1.14rem] font-extrabold tracking-tight transition-colors hover:text-coral-600"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-lilac-300 transition-transform duration-300 group-hover:scale-150" />
                     {l.label}
@@ -117,7 +117,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
           <div>
             <h3 className="text-eyebrow text-inkmute">{dict.footer.contactTitle}</h3>
-            <ul className="mt-5 flex flex-col gap-4 text-[1rem] font-semibold text-inksoft">
+            <ul className="mt-5 flex flex-col gap-4 text-[1.06rem] font-semibold text-inksoft">
               <li className="flex items-start gap-3">
                 <Glyph name="pin" className="mt-0.5 h-5 w-5 shrink-0 text-coral-500" strokeWidth={2.8} />
                 {dict.footer.address}
@@ -149,13 +149,9 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-ink/10 py-8 text-[0.88rem] text-inkmute sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-ink/10 py-8 text-[0.96rem] text-inkmute sm:flex-row">
           <p>
             © {year} Aurélia Clinic. {dict.footer.rights}
-          </p>
-          <p className="flex items-center gap-2 font-semibold">
-            <Glyph name="code" className="h-4 w-4 text-coral-500" strokeWidth={3} />
-            {dict.footer.madeBy}
           </p>
           <ul className="flex items-center gap-5">
             {dict.footer.legal.map((l) => (

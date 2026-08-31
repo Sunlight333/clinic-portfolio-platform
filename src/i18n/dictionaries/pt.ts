@@ -376,7 +376,6 @@ const pt: Dictionary = {
     newsletterCta: "Inscrever",
     newsletterNote: "Sem ruído de marketing. Cancele com um clique.",
     rights: "Todos os direitos reservados.",
-    madeBy: "Design e engenharia pela equipe de estúdio da Aurélia",
     legal: ["Privacidade", "Termos", "Cookies"],
     address: "Av. Paulista 1600 · São Paulo · Brasil",
     phone: "+55 11 4000-2020",
