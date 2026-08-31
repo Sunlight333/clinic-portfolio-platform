@@ -280,6 +280,9 @@ const pt: Dictionary = {
       { name: "Dr. Tomás Ferreira", role: "Medicina estética", focus: "Injetáveis, protocolos regenerativos de pele" },
       { name: "Dra. Camila Duarte", role: "Medicina de família", focus: "Prevenção, acompanhamento de crônicos" },
       { name: "Dr. Rafael Nunes", role: "Ortodontia", focus: "Alinhadores invisíveis, tratamento adulto" },
+      { name: "Dra. Beatriz Salgado", role: "Dermatologia", focus: "Acne, melasma, laser fracionado" },
+      { name: "Dr. Nuno Vilela", role: "Cirurgia oral", focus: "Sisos, enxerto ósseo, microendodontia" },
+      { name: "Dr. Elias Bonfim", role: "Anestesia · Sedação", focus: "Sedação consciente, protocolos de ansiedade" },
     ],
   },
 

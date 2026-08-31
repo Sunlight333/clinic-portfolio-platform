@@ -181,11 +181,11 @@ export const IMG = {
     "h": 1350,
     "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAACwBACdASoUAB4APwFqrE6rJiQiMAgBYCAJaADDNBjx/DQ6mIJEMGmK/a51GheAAP7qlucdPijHvECjlFNRZo6OjaRjsEspDeBOh+qyVgO3h3uywRr0tCh1tdqFjI2gmOUIy8TKA3KvrTZbK0w58Y80Wy/o6jh/CVTy0+/IhwAAAA=="
   },
-  "team-doctor-3": {
-    "src": "/images/team-doctor-3.jpg",
-    "w": 800,
-    "h": 1050,
-    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwBACdASoUABoAPwFqrE8rJiQiMAgBYCAJZQAAW+m9eGQsiL4OFPjQacAA/sN+IoIuZ1ZLgB2xNwe42Wytdb5ieJqKDznpwAqOlJACbnwwAAAA"
+  "team-derm": {
+    "src": "/images/team-derm.jpg",
+    "w": 900,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBQCdASoUABsAPwFwr1CrJqQisBgIAWAgCWcAygAQaI/bB7B+Sk0eGuli2MpaCMGAAP3NFw9maZgg1O7YnQcgPModnDt8I9zL6/A+PlmB8hgPtNOFqv7ViQ9XUDYz4LwOIzvrAihUToAA"
   },
   "team-doctor-5": {
     "src": "/images/team-doctor-5.jpg",
@@ -193,17 +193,35 @@ export const IMG = {
     "h": 1050,
     "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwBACdASoUABoAPvlsrk6qpiSiMBgMAVAfCWwAvzgGPXydWYHuoK4m4pEAJQjAAPnbyyVkReQ+Vp6fMkPy8j05HaNok/47HmDusQiD77QO4t6ixd6VhX1ymJvwgG96ZncMiLumN3v1XFyUaTiaOXhgAAA="
   },
-  "team-doctor-6": {
-    "src": "/images/team-doctor-6.jpg",
-    "w": 800,
-    "h": 1050,
-    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBQCdASoUABoAPwFqr1ErJaQisBgIAWAgCWwAnTKEePe6ACJbXKQo4BtcexJxeNBRyZAKd4gAAP4UisljC6jPVAWIVJg5D8Hcnbf/VoD5/lwjle3ebi+se6tKQNpAs8FX7Inkj1hukbFNwzTMjmj0qWPgvX6M40i/CLVrK6iXMc1IwiBivfy7lztAy9iph5EBsSqW0AA="
+  "team-family-med": {
+    "src": "/images/team-family-med.jpg",
+    "w": 900,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUABsAPvVqpk6qpiMiMAwBUB6JZADA3CHf3k3ZyKNGAEAIAP6uMPIeGHGMFg9iI5Agf0K8JobJ2jQkOxBYE83TKG6Y5EMIuP6q/W2DmTGO/kAAAAA="
   },
   "team-nurse": {
     "src": "/images/team-nurse.jpg",
     "w": 900,
     "h": 1125,
     "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACwBACdASoUABkAPv1qrE6rJiQiMBgMAWAfiWwAs4A0Kfuaqa4w0IfMr4W/QFgAAP7TGAqDahX9gx9DrUzsw+V4cwpSpuvMvl6irqajM6ecBz0on7z8a14YJs1t/Wu3wccIrGdr5VTx24sbib9GHfnefhdTlwZyQAAAAA=="
+  },
+  "team-ortho": {
+    "src": "/images/team-ortho.jpg",
+    "w": 900,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACwBQCdASoUABsAPwFyrVCrJyQisBgIAWAgCWUAxnwQvI3euiwqfvugtLWpF4wm+M84dDu6XQAA/suM4x3NxxaiUc+nMcTC6XSizt+BbdV53ZnGibGo5HW6/YwMJPGbZZb2TdqoPiZOtQ2LRTbVVFyN9pYvGsVMnh9AAA=="
+  },
+  "team-sedation": {
+    "src": "/images/team-sedation.jpg",
+    "w": 900,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBQCdASoUABsAPwFsr1CrJaQisBgIAWAgCUAZRlAAm4iQo88AhmeBQuZBO+qgMBdQAAD+6B0vnM716OJALVRdy6hWdj75QJQkCyvak/d7LExf3SMEWG7YbzBpJqVBBa2Mym1ORcc2BbpBKVYZ+5VOR+FFfN7SnXcZi5xEqqzGAAAA"
+  },
+  "team-surgeon": {
+    "src": "/images/team-surgeon.jpg",
+    "w": 900,
+    "h": 1200,
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBQCdASoUABsAPvlork6qpiSiMBgMAVAfCUAYmwIbtJemzeR4Mx90DGAQkKqen3CQAAD+7VCdd2tP7uU9e0V38am7Qi+UWGuhcc+uzvFGIzbqxOhnsEjC40SkyApmLTyuDRbMlpcidBNDcGYav7nVQQlqRM2BsCAnj2nsYPeGZVK1t4MAtmgAAAA="
   },
   "tech-team": {
     "src": "/images/tech-team.jpg",

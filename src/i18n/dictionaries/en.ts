@@ -278,6 +278,9 @@ const en = {
       { name: "Dr. Tomás Ferreira", role: "Aesthetic medicine", focus: "Injectables, regenerative skin protocols" },
       { name: "Dra. Camila Duarte", role: "Family medicine", focus: "Preventive care, chronic follow-up" },
       { name: "Dr. Rafael Nunes", role: "Orthodontics", focus: "Invisible aligners, adult treatment" },
+      { name: "Dra. Beatriz Salgado", role: "Dermatology", focus: "Acne, melasma, laser resurfacing" },
+      { name: "Dr. Nuno Vilela", role: "Oral surgery", focus: "Wisdom teeth, bone grafting, micro-endodontics" },
+      { name: "Dr. Elias Bonfim", role: "Anaesthesia · Sedation", focus: "Conscious sedation, anxiety protocols" },
     ],
   },
 

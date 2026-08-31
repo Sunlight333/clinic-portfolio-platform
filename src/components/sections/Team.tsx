@@ -11,8 +11,11 @@ import type { ImageKey } from "@/lib/images";
 const MEMBER_META: { image: ImageKey; icon: GlyphName; tone: Tone; shape: "arch" | "arch-soft" }[] = [
   { image: "team-clinician-f", icon: "implant", tone: "sky", shape: "arch" },
   { image: "team-doctor-5", icon: "sparkle", tone: "rose", shape: "arch-soft" },
-  { image: "team-doctor-6", icon: "stethoscope", tone: "mint", shape: "arch" },
-  { image: "team-doctor-3", icon: "aligner", tone: "lilac", shape: "arch-soft" },
+  { image: "team-family-med", icon: "stethoscope", tone: "mint", shape: "arch" },
+  { image: "team-ortho", icon: "aligner", tone: "lilac", shape: "arch-soft" },
+  { image: "team-derm", icon: "skin", tone: "coral", shape: "arch" },
+  { image: "team-surgeon", icon: "tooth", tone: "amber", shape: "arch-soft" },
+  { image: "team-sedation", icon: "heartPulse", tone: "sky", shape: "arch" },
 ];
 
 export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -43,11 +46,16 @@ export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 flex flex-wrap justify-center gap-x-7 gap-y-10">
           {dict.team.members.map((member, i) => {
             const m = MEMBER_META[i];
             return (
-              <Reveal key={member.name} delay={i * 0.09} direction="up">
+              <Reveal
+                key={member.name}
+                delay={(i % 4) * 0.09}
+                direction="up"
+                className="w-full sm:w-[calc(50%-0.875rem)] lg:w-[calc(25%-1.32rem)]"
+              >
                 <article
                   className={`group relative flex h-full flex-col ${i % 2 === 1 ? "lg:mt-10" : ""}`}
                 >
