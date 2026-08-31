@@ -10,12 +10,17 @@ import { Approach } from "@/components/sections/Approach";
 import { Impact } from "@/components/sections/Impact";
 import { TechStack } from "@/components/sections/TechStack";
 import { Team } from "@/components/sections/Team";
+import { Nurses } from "@/components/sections/Nurses";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Facility } from "@/components/sections/Facility";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { CtaBand } from "@/components/sections/CtaBand";
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
@@ -30,6 +35,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Impact dict={dict} />
       <TechStack dict={dict} />
       <Team locale={locale} dict={dict} />
+      <Nurses dict={dict} />
       <Testimonials dict={dict} />
       <Facility dict={dict} />
       <FaqSection dict={dict} />

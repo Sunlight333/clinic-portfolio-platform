@@ -286,6 +286,20 @@ const es: Dictionary = {
     ],
   },
 
+  nurses: {
+    eyebrow: "Equipo de enfermería",
+    title: "Quienes están junto al sillón",
+    lead:
+      "Nuestras enfermeras preparan cada sala, acompañan todo el procedimiento y hacen la llamada de seguimiento — son a quienes los pacientes recuerdan por su nombre.",
+    members: [
+      { name: "Marta Coelho", role: "Enfermera jefa", focus: "Coordinación de salas, protocolo estéril" },
+      { name: "Inês Barbosa", role: "Enfermera dental", focus: "Trabajo a cuatro manos, preparación quirúrgica" },
+      { name: "Luana Prado", role: "Enfermera de estética", focus: "Peelings, cuidados posprocedimiento" },
+      { name: "Sofia Mendes", role: "Enfermera de recuperación", focus: "Monitorización de sedación, alta" },
+      { name: "Carla Nogueira", role: "Enfermera pediátrica", focus: "Primeras visitas, niños ansiosos" },
+    ],
+  },
+
   testimonials: {
     eyebrow: "Historias de pacientes",
     title: "La parte de la que más orgullo tenemos",

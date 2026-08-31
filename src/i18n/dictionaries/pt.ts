@@ -286,6 +286,20 @@ const pt: Dictionary = {
     ],
   },
 
+  nurses: {
+    eyebrow: "Equipe de enfermagem",
+    title: "Quem fica ao lado da cadeira",
+    lead:
+      "Nossas enfermeiras preparam cada sala, acompanham todo o procedimento e fazem a ligação de retorno — são elas que os pacientes lembram pelo nome.",
+    members: [
+      { name: "Marta Coelho", role: "Enfermeira-chefe", focus: "Coordenação de salas, protocolo estéril" },
+      { name: "Inês Barbosa", role: "Enfermeira de odontologia", focus: "Trabalho a quatro mãos, preparo cirúrgico" },
+      { name: "Luana Prado", role: "Enfermeira de estética", focus: "Peelings, cuidados pós-procedimento" },
+      { name: "Sofia Mendes", role: "Enfermeira de recuperação", focus: "Monitorização da sedação, alta" },
+      { name: "Carla Nogueira", role: "Enfermeira pediátrica", focus: "Primeiras visitas, crianças ansiosas" },
+    ],
+  },
+
   testimonials: {
     eyebrow: "Histórias de pacientes",
     title: "A parte que mais nos orgulha",

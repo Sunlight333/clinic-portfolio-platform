@@ -145,6 +145,36 @@ export const IMG = {
     "h": 801,
     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAA0APwForE6rJaQiMAgBYCAJYwCdABk+T8ANvn93bzPQAP7p1Is26yWLBDKOP75ESPms3maaP+JY16KmtXAifxgCl/dVBKHtoPnUjf/ogmFAAAA="
   },
+  "nurse-aesthetic": {
+    "src": "/images/nurse-aesthetic.jpg",
+    "w": 800,
+    "h": 800,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoUABQAPwFurk8rJqQiMAgBYCAJYgDE2CHfI4yCoiMPF0MbRRF6tGAA/upyLt2nc1GZstv9vauCA+gbIt8lW92dJ8wmXf+IxH9yPB4nGUSN0nSsfl5avqQCyLbG8f0XFBdjCAAA"
+  },
+  "nurse-dental": {
+    "src": "/images/nurse-dental.jpg",
+    "w": 800,
+    "h": 800,
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBQCdASoUABQAPwFssE8rJiSiKA1RYCAJYgCdM2QBHyLgnEuXbvTcto7Za9RqlEogAPzc/wuD0P+Zxi3s4toMr2GP5StnNd0QZKaSz2vpu1VMCyWvBPEj+aT8Y4U05vAheU3ocENLvn9do2Hzea9xnQwXgdXSVdvl2ktBgWRBnAAA"
+  },
+  "nurse-lead": {
+    "src": "/images/nurse-lead.jpg",
+    "w": 800,
+    "h": 800,
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBQCdASoUABQAPwFurVErJiQisBgIAWAgCWwAtsgMbsQl3vaOjtz/urbxqdC2R7xAAP6589lSKlOT9BOC21Ftq/9z+F9FFkLt7bPjKkmvWMFqIftc5wZme2H75dY5gkDCjTSLiOMV5rrzN0Vp3nUVjAKQYjgwOu0MsJQAAAA="
+  },
+  "nurse-paediatric": {
+    "src": "/images/nurse-paediatric.jpg",
+    "w": 800,
+    "h": 800,
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBQCdASoUABQAPwFmrE8rJSQiMBgMAWAgCWQAqQ9fwCwgypOtv5oinRrb1Wmtnc/OAAD+ou4Y4aT+xm8WW0BT4v4Ms8y0Iww/UBWQWaNiQ7HXMA3nWQqpWnOmPL0JwcKXPZQsi00AeHgjHLNU38zmvX+M6YP2bA9lf8AAAAA="
+  },
+  "nurse-recovery": {
+    "src": "/images/nurse-recovery.jpg",
+    "w": 800,
+    "h": 800,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUABQAPvFYp06ppKOiN/qoATAeCUAX5wG1hPkCA2g7DO/SgAD9B4AmpcJ4sCF+wCB5eqrGX0eR34uhYqlb/o0S9dlq/Upjvyw3RwNcyR8WoV22jgA="
+  },
   "person-3": {
     "src": "/images/person-3.jpg",
     "w": 500,
@@ -198,12 +228,6 @@ export const IMG = {
     "w": 900,
     "h": 1200,
     "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUABsAPvVqpk6qpiMiMAwBUB6JZADA3CHf3k3ZyKNGAEAIAP6uMPIeGHGMFg9iI5Agf0K8JobJ2jQkOxBYE83TKG6Y5EMIuP6q/W2DmTGO/kAAAAA="
-  },
-  "team-nurse": {
-    "src": "/images/team-nurse.jpg",
-    "w": 900,
-    "h": 1125,
-    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACwBACdASoUABkAPv1qrE6rJiQiMBgMAWAfiWwAs4A0Kfuaqa4w0IfMr4W/QFgAAP7TGAqDahX9gx9DrUzsw+V4cwpSpuvMvl6irqajM6ecBz0on7z8a14YJs1t/Wu3wccIrGdr5VTx24sbib9GHfnefhdTlwZyQAAAAA=="
   },
   "team-ortho": {
     "src": "/images/team-ortho.jpg",

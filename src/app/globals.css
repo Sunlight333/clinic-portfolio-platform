@@ -306,6 +306,25 @@
 @utility shape-petal { border-radius: 999px 3rem 999px 3rem; }
 @utility shape-capsule { border-radius: 999px; }
 
+/* One-line card rail. It bleeds past the container so the first card lines up
+   with the section heading and the row runs on toward the edge of the screen;
+   wide viewports show every card, narrow ones scroll instead of wrapping. */
+@utility rail-x {
+  scrollbar-width: none;
+  padding-inline-start: max(
+    clamp(1.1rem, 4vw, 3.5rem),
+    calc((100vw - 88rem) / 2 + clamp(1.1rem, 4vw, 3.5rem))
+  );
+  padding-inline-end: 1.5rem;
+  scroll-padding-inline-start: max(
+    clamp(1.1rem, 4vw, 3.5rem),
+    calc((100vw - 88rem) / 2 + clamp(1.1rem, 4vw, 3.5rem))
+  );
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* 3D helpers */
 @utility perspective-near { perspective: 900px; }
 @utility perspective-far { perspective: 1600px; }

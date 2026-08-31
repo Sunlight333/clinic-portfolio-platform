@@ -284,6 +284,20 @@ const en = {
     ],
   },
 
+  nurses: {
+    eyebrow: "Nursing team",
+    title: "The people beside the chair",
+    lead:
+      "Our nurses prepare every room, stay through the procedure and make the follow-up call — they are the ones most patients remember by name.",
+    members: [
+      { name: "Marta Coelho", role: "Head nurse", focus: "Room coordination, sterile protocol" },
+      { name: "Inês Barbosa", role: "Dental nurse", focus: "Four-handed chairside, surgery prep" },
+      { name: "Luana Prado", role: "Aesthetic nurse", focus: "Peels, post-procedure skin care" },
+      { name: "Sofia Mendes", role: "Recovery nurse", focus: "Sedation monitoring, discharge checks" },
+      { name: "Carla Nogueira", role: "Paediatric nurse", focus: "First visits, anxious children" },
+    ],
+  },
+
   testimonials: {
     eyebrow: "Patient stories",
     title: "The part we are proudest of",

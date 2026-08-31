@@ -12,6 +12,7 @@ import { Counter } from "@/components/ui/Motion";
 import { Button } from "@/components/ui/Button";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { Team } from "@/components/sections/Team";
+import { Nurses } from "@/components/sections/Nurses";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBand } from "@/components/sections/CtaBand";
 
@@ -39,7 +40,11 @@ const VALUE_META: { icon: GlyphName; tone: Tone; shape: string }[] = [
 
 const CRED_ICONS: GlyphName[] = ["shield", "check", "lock", "accessibility"];
 
-export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
@@ -52,7 +57,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div
           aria-hidden
           className="animate-drift pointer-events-none absolute -left-28 top-10 h-[34rem] w-[34rem] rounded-full opacity-55 blur-[110px]"
-          style={{ background: "radial-gradient(circle,#ffd6c2,transparent 68%)" }}
+          style={{
+            background: "radial-gradient(circle,#ffd6c2,transparent 68%)",
+          }}
         />
 
         <div className="container-x relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
@@ -65,11 +72,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <Reveal delay={0.08}>
               <h1 className="text-h1 mt-6">
                 {t.title}{" "}
-                <span className="text-gradient-warm font-serif italic">{t.titleAccent}</span>
+                <span className="text-gradient-warm font-serif italic">
+                  {t.titleAccent}
+                </span>
               </h1>
             </Reveal>
             <Reveal delay={0.16}>
-              <p className="text-lead mt-6 max-w-[56ch] text-inksoft">{t.lead}</p>
+              <p className="text-lead mt-6 max-w-[56ch] text-inksoft">
+                {t.lead}
+              </p>
             </Reveal>
 
             <Reveal delay={0.24}>
@@ -81,7 +92,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   >
                     <dt className="font-display flex items-baseline justify-center gap-1 text-[2rem] leading-none font-extrabold tracking-tight">
                       <Counter to={s.value} />
-                      <span className="text-gradient-warm text-[0.66em]">{s.suffix}</span>
+                      <span className="text-gradient-warm text-[0.66em]">
+                        {s.suffix}
+                      </span>
                     </dt>
                     <dd className="mt-2 text-[0.88rem] leading-tight font-bold text-inkmute">
                       {s.label}
@@ -144,7 +157,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <span className="flex flex-col leading-none">
                   <span className="font-display flex items-baseline gap-1 text-[2rem] font-extrabold tracking-tight">
                     {dict.hero.stats[0].value}
-                    <span className="text-gradient-warm text-[0.6em]">{dict.hero.stats[0].suffix}</span>
+                    <span className="text-gradient-warm text-[0.6em]">
+                      {dict.hero.stats[0].suffix}
+                    </span>
                   </span>
                   <span className="mt-2 max-w-[10rem] text-[0.88rem] font-bold text-inkmute">
                     {dict.hero.stats[0].label}
@@ -165,7 +180,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </Reveal>
             <div className="mt-8 flex flex-col gap-5">
               {t.story.map((paragraph, i) => (
-                <Reveal key={paragraph.slice(0, 24)} delay={i * 0.08} direction="left">
+                <Reveal
+                  key={paragraph.slice(0, 24)}
+                  delay={i * 0.08}
+                  direction="left"
+                >
                   <p className="text-[1.1rem] leading-relaxed text-inksoft">
                     <span className="float-left mr-3 mt-1 grid h-8 w-8 place-items-center rounded-full bg-coral-50 font-display text-[0.98rem] font-extrabold text-coral-600">
                       {i + 1}
@@ -206,7 +225,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                       <h3 className="font-display mt-6 text-[1.22rem] font-extrabold tracking-tight">
                         {v.title}
                       </h3>
-                      <p className="mt-3 text-[1.04rem] leading-relaxed text-inksoft">{v.desc}</p>
+                      <p className="mt-3 text-[1.04rem] leading-relaxed text-inksoft">
+                        {v.desc}
+                      </p>
                     </article>
                   </TiltCard>
                 </Reveal>
@@ -234,12 +255,18 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             {t.credentials.map((c, i) => (
               <Reveal key={c.label} delay={i * 0.07} direction="scale">
                 <div className="flex h-full items-center gap-4 rounded-[1.7rem] border border-white bg-white/80 p-5 shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1.5">
-                  <IconOrb icon={CRED_ICONS[i]} tone={(["coral", "mint", "lilac", "sky"] as Tone[])[i]} size="lg" />
+                  <IconOrb
+                    icon={CRED_ICONS[i]}
+                    tone={(["coral", "mint", "lilac", "sky"] as Tone[])[i]}
+                    size="lg"
+                  />
                   <div>
                     <p className="font-display text-[1.12rem] font-extrabold tracking-tight">
                       {c.label}
                     </p>
-                    <p className="mt-1 text-[0.96rem] leading-snug text-inksoft">{c.desc}</p>
+                    <p className="mt-1 text-[0.96rem] leading-snug text-inksoft">
+                      {c.desc}
+                    </p>
                   </div>
                 </div>
               </Reveal>
@@ -249,6 +276,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </section>
 
       <Team locale={locale} dict={dict} />
+      <Nurses dict={dict} />
 
       {/* ======================================================= built here */}
       <section className="section relative overflow-hidden bg-[linear-gradient(180deg,#f7f2ff,#fff6f0)]">
@@ -271,7 +299,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     </Chip>
                   ))}
                 </div>
-                <Button href={`/${locale}#tech`} size="lg" className="mt-8" icon="arrowRight">
+                <Button
+                  href={`/${locale}#tech`}
+                  size="lg"
+                  className="mt-8"
+                  icon="arrowRight"
+                >
                   {dict.common.learnMore}
                 </Button>
               </div>
