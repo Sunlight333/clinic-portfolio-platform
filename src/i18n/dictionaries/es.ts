@@ -379,9 +379,9 @@ const es: Dictionary = {
     members: [
       { name: "Marta Coelho", role: "Enfermera jefa", focus: "Coordinación de salas, protocolo estéril" },
       { name: "Inês Barbosa", role: "Enfermera dental", focus: "Trabajo a cuatro manos, preparación quirúrgica" },
-      { name: "Carla Nogueira", role: "Enfermera de estética", focus: "Peelings, cuidados posprocedimiento" },
+      { name: "Carla Nogueira", role: "Enfermera pediátrica", focus: "Primeras visitas, niños ansiosos" },
       { name: "Sofia Mendes", role: "Enfermera de recuperación", focus: "Monitorización de sedación, alta" },
-      { name: "Luana Prado", role: "Enfermera pediátrica", focus: "Primeras visitas, niños ansiosos" },
+      { name: "Luana Prado", role: "Enfermera de estética", focus: "Peelings, cuidados posprocedimiento" },
     ],
   },
 

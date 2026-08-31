@@ -306,6 +306,13 @@
 @utility shape-petal { border-radius: 999px 3rem 999px 3rem; }
 @utility shape-capsule { border-radius: 999px; }
 
+/* Soft edges for the auto-flowing card row: it never starts or stops on a
+   hard cut, so the loop reads as one continuous band. */
+@utility rail-fade {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5rem, #000 calc(100% - 5rem), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 5rem, #000 calc(100% - 5rem), transparent 100%);
+}
+
 /* One-line card rail. It bleeds past the container so the first card lines up
    with the section heading and the row runs on toward the edge of the screen;
    wide viewports show every card, narrow ones scroll instead of wrapping. */

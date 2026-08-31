@@ -12,9 +12,9 @@ import type { ImageKey } from "@/lib/images";
 const NURSE_META: { image: ImageKey; icon: GlyphName; tone: Tone }[] = [
   { image: "nurse-lead", icon: "shield", tone: "mint" },
   { image: "nurse-dental", icon: "tooth", tone: "sky" },
-  { image: "nurse-aesthetic", icon: "sparkle", tone: "rose" },
-  { image: "nurse-recovery", icon: "heartPulse", tone: "lilac" },
   { image: "nurse-paediatric", icon: "child", tone: "amber" },
+  { image: "nurse-recovery", icon: "heartPulse", tone: "lilac" },
+  { image: "nurse-aesthetic", icon: "sparkle", tone: "rose" },
 ];
 
 export function Nurses({ dict }: { dict: Dictionary }) {

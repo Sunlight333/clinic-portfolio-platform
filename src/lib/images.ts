@@ -149,7 +149,7 @@ export const IMG = {
     "src": "/images/nurse-aesthetic.jpg",
     "w": 800,
     "h": 800,
-    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBQCdASoUABQAPwFmrE8rJSQiMBgMAWAgCWQAqQ9fwCwgypOtv5oinRrb1Wmtnc/OAAD+ou4Y4aT+xm8WW0BT4v4Ms8y0Iww/UBWQWaNiQ7HXMA3nWQqpWnOmPL0JwcKXPZQsi00AeHgjHLNU38zmvX+M6YP2bA9lf8AAAAA="
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoUABQAPwFurk8rJqQiMAgBYCAJYgDE2CHfI4yCoiMPF0MbRRF6tGAA/upyLt2nc1GZstv9vauCA+gbIt8lW92dJ8wmXf+IxH9yPB4nGUSN0nSsfl5avqQCyLbG8f0XFBdjCAAA"
   },
   "nurse-dental": {
     "src": "/images/nurse-dental.jpg",
@@ -167,7 +167,7 @@ export const IMG = {
     "src": "/images/nurse-paediatric.jpg",
     "w": 800,
     "h": 800,
-    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoUABQAPwFurk8rJqQiMAgBYCAJYgDE2CHfI4yCoiMPF0MbRRF6tGAA/upyLt2nc1GZstv9vauCA+gbIt8lW92dJ8wmXf+IxH9yPB4nGUSN0nSsfl5avqQCyLbG8f0XFBdjCAAA"
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBQCdASoUABQAPwFmrE8rJSQiMBgMAWAgCWQAqQ9fwCwgypOtv5oinRrb1Wmtnc/OAAD+ou4Y4aT+xm8WW0BT4v4Ms8y0Iww/UBWQWaNiQ7HXMA3nWQqpWnOmPL0JwcKXPZQsi00AeHgjHLNU38zmvX+M6YP2bA9lf8AAAAA="
   },
   "nurse-recovery": {
     "src": "/images/nurse-recovery.jpg",

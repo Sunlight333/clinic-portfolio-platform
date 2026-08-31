@@ -377,9 +377,9 @@ const en = {
     members: [
       { name: "Marta Coelho", role: "Head nurse", focus: "Room coordination, sterile protocol" },
       { name: "Inês Barbosa", role: "Dental nurse", focus: "Four-handed chairside, surgery prep" },
-      { name: "Carla Nogueira", role: "Aesthetic nurse", focus: "Peels, post-procedure skin care" },
+      { name: "Carla Nogueira", role: "Paediatric nurse", focus: "First visits, anxious children" },
       { name: "Sofia Mendes", role: "Recovery nurse", focus: "Sedation monitoring, discharge checks" },
-      { name: "Luana Prado", role: "Paediatric nurse", focus: "First visits, anxious children" },
+      { name: "Luana Prado", role: "Aesthetic nurse", focus: "Peels, post-procedure skin care" },
     ],
   },
 

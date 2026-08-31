@@ -18,8 +18,10 @@ const MEMBER_META: MemberMeta[] = [
 export function Team({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const p = (path: string) => localePath(locale, path);
 
+  /* The nursing panel belongs to this block, so the two sections share one gap
+     instead of stacking a full section rhythm on top of another. */
   return (
-    <section id="team" className="section relative overflow-hidden">
+    <section id="team" className="section relative overflow-hidden pb-6 lg:pb-8">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-[26rem] bg-[linear-gradient(180deg,#f8f2ff,transparent)]"
