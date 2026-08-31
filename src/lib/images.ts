@@ -185,7 +185,7 @@ export const IMG = {
     "src": "/images/team-derm.jpg",
     "w": 900,
     "h": 1200,
-    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBQCdASoUABsAPwFwr1CrJqQisBgIAWAgCWcAygAQaI/bB7B+Sk0eGuli2MpaCMGAAP3NFw9maZgg1O7YnQcgPModnDt8I9zL6/A+PlmB8hgPtNOFqv7ViQ9XUDYz4LwOIzvrAihUToAA"
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBQCdASoUABsAPwFsrE6rJiQiMAgBYCAJZQDImCHEizP+hf7Mbvam9PM5VF59SD50S+gAAPfTvvJRLWHG8o6jmvJH2kfMj8iXpu89WiBCbSd/6OykVezo9m6PILMzFxKwhD/xBV2QHXuVI7FAE7faDzm4F5P6kloFVqM7oAA="
   },
   "team-doctor-5": {
     "src": "/images/team-doctor-5.jpg",
@@ -215,7 +215,7 @@ export const IMG = {
     "src": "/images/team-sedation.jpg",
     "w": 900,
     "h": 1200,
-    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBQCdASoUABsAPwFsr1CrJaQisBgIAWAgCUAZRlAAm4iQo88AhmeBQuZBO+qgMBdQAAD+6B0vnM716OJALVRdy6hWdj75QJQkCyvak/d7LExf3SMEWG7YbzBpJqVBBa2Mym1ORcc2BbpBKVYZ+5VOR+FFfN7SnXcZi5xEqqzGAAAA"
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwBACdASoUABsAPwFoq06rJaOiMAgBYCAJZQDGQCG+12CD+j3tyF+MalKgAAD+01GRjHLZxQ6PLAgDbth56YOTCBD6daEarlBBNxBJo1VwQFZO0KTFNtJP/24XIGAA"
   },
   "team-surgeon": {
     "src": "/images/team-surgeon.jpg",
