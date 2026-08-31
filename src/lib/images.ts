@@ -185,7 +185,7 @@ export const IMG = {
     "src": "/images/team-derm.jpg",
     "w": 900,
     "h": 1200,
-    "blur": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQBQCdASoUABsAPwFosFGrJSSisBgIAWAgCUAY/IHr7GJ/wcL1DcAwFD3kmfqi+a7c3gAA9votB+GwmZSyJUrFumU9jKzIH4BHHG0tPZ5vuRPkkOXSTEckqnSnXC4XZeByKuceEL33qyJVDA92tvXA+7cT+yk5xp6MKPFByAAAAA=="
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBQCdASoUABsAPwFwr1CrJqQisBgIAWAgCWMAvkg0b/HcEdICAfqviV1nQDe9WBwAAP7vs72b+g21AJctgEmBr9fq8CYWiuUqh0me0G5eH7tEh9SKNui9f0B8notdbWScvvEQdyuIDQaO03sRmSm4gDigAA=="
   },
   "team-doctor-5": {
     "src": "/images/team-doctor-5.jpg",
